@@ -1,0 +1,8 @@
+<!--components/d-check-icon/d-check-icon.wxml-->
+<view class="content" bind:tap="iconClick">
+  <icon class="check-icon"
+        type="success" size="24"
+        style="border-color: {{isChecked ? '#ff5777' : '#aaa'}}"
+        color="{{isChecked ? '#ff5777' : '#fff'}}"/>
+  <view class="border"></view>
+</view>

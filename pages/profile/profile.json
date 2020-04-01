@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "d-header": "./childCpns/d-header/d-header",
+    "d-info": "./childCpns/d-info/d-info",
+    "d-list-view": "./childCpns/d-list-view/d-list-view"
+  },
+  "navigationBarTitleText": "我的"
+}

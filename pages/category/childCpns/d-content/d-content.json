@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "d-tab-control": "/components/d-tab-control/d-tab-control",
+    "d-goods": "/components/d-goods/d-goods"
+  }
+}

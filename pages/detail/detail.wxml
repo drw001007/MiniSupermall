@@ -1,0 +1,11 @@
+<!--pages/detail/detail.wxml-->
+<view class="detail">
+  <d-swiper class="d-swiper" images="{{topImages}}"/>
+  <d-base-info baseinfo="{{baseInfo}}"/>
+  <d-shop-info shopinfo="{{shopInfo}}"/>
+  <d-detail-info detailinfo="{{detailInfo}}"/>
+  <d-param-info paraminfo="{{paramInfo}}"/>
+  <d-comment-info commentinfo="{{commentInfo}}"/>
+  <d-recommend-info recommends="{{recommends}}"/>
+</view>
+<d-buttom-bar class="buttom-bar" bind:addcart="onAddCart"/>

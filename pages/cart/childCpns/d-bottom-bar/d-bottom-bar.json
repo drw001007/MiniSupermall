@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "d-check-icon": "/components/d-check-icon/d-check-icon"
+  }
+}

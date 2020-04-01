@@ -1,0 +1,23 @@
+<!--pages/home/home.wxml-->
+<!-- 1.展示轮播图 -->
+<d-swiper images="{{banners}}"/>
+
+<!-- 2.推荐数据展示 -->
+<d-recommend recommends="{{recommends}}" bind:imageload="handleImageLoad"/>
+
+<!-- 3.展示本周流行 -->
+<d-popular/>
+
+<!-- 4.d-tab-control -->
+<d-tab-control class="{{isTabFixed ? 'fixed' : ''}}"
+                bind:itemclick="handleTabClick"
+                titles="{{titles}}"
+                id="tab-control"/>
+<d-tab-control titles="{{titles}}" wx:if="{{isTabFixed}}"/>
+
+<!-- 5.展示商品数据 -->
+<d-goods goodslist="{{goods[currentType].list}}"/>
+
+<!-- 6.回到顶部 -->
+<!-- hidden: hidden属性对于自定义组件是无效的 -->
+<d-back-top wx:if="{{showBackTop}}"/>

@@ -1,0 +1,10 @@
+<!--pages/category/category.wxml-->
+<view class="category">
+  <d-menu class="category-menu" 
+          categories="{{categories}}" 
+          bind:menuClick="menuClick"/>
+  <d-content class="category-content" 
+              subcategories = "{{categoryData[currentIndex].subcategories}}"
+              categoryDetail = "{{categoryData[currentIndex].categoryDetail[currentType]}}"
+              bind:itemClick="tabClick"/>
+</view>

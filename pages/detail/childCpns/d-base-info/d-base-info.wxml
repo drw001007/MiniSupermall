@@ -1,0 +1,22 @@
+<!--pages/detail/childCpns/d-base-info.wxml-->
+<view class="base-info">
+  <view class="title">{{baseinfo.title}}</view>
+  <view class="price-info">
+    <text class='new-price'>{{baseinfo.newPrice}}</text>
+    <text class='old-price'>{{baseinfo.oldPrice}}</text>
+    <text class='discount'>{{baseinfo.discount}}</text>
+  </view>
+  <view class="sell-info">
+    <block wx:for="{{baseinfo.columns}}" wx:key="index">
+      <view class="sell-item">{{item}}</view>
+    </block>
+  </view>
+  <view class="service">
+    <block wx:for="{{baseinfo.services}}" wx:key="index">
+      <view class="service-item">
+        <image class="icon" src="{{item.icon}}"></image>
+        <text class="name">{{item.name}}</text>
+      </view>
+    </block>
+  </view>
+</view>

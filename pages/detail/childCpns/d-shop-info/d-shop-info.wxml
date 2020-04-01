@@ -1,0 +1,31 @@
+<!--pages/detail/childCpns/d-shop-info/d-shop-info.wxml-->
+<view class="shop-info">
+  <view class="title-info">
+    <image class="image-info" src="{{shopinfo.logo}}"></image>
+    <text class="text">{{shopinfo.name}}</text>
+  </view>
+  <view class="sell-info">
+    <view class="count-info sell-item">
+      <view class="total-sell count-item">
+        <view class="count">{{shopinfo.sells}}</view>
+        <view class="text">总销量</view>
+      </view>
+      <view class="goods-count count-item">
+        <view class="count">{{shopinfo.goodsCount}}</view>
+        <text class="text">全部宝贝</text>
+      </view>
+    </view>
+    <view class="grade-info sell-item">
+      <block wx:for="{{shopinfo.score}}" wx:key="index">
+        <view class="grade-row">
+          <view class="item name">{{item.name}}</view>
+          <view class="item score {{item.isBetter ? 'good' : 'less'}}">{{item.score}}</view>
+          <view class="item better {{item.isBetter ? 'good' : 'less'}}">{{item.isBetter ? "高" : "低"}}</view>
+        </view>
+      </block>
+    </view>
+  </view>
+  <view class="entrance">
+    <button class="button" size="mini">进店逛逛</button>
+  </view>
+</view>

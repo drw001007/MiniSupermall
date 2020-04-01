@@ -1,0 +1,13 @@
+<!--pages/cart/cart.wxml-->
+<view class="cart">
+  <view class="cart-list">
+    <block wx:for="{{cartList}}" wx:key="index">
+      <cart-list-item goods="{{item}}" index="{{index}}"/>
+    </block>
+  </view>
+  <d-bottom-bar bind:selectAll="onSelectAll"
+                selected="{{isSelectAll}}"
+                counter="{{totalCounter}}"
+                price="{{totalPrice}}"
+                />
+</view>

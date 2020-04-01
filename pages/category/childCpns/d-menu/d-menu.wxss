@@ -1,0 +1,19 @@
+/* pages/category/childCpns/d-menu/d-menu.wxss */
+.menu {
+  height: 100%;
+  font-size: 28rpx;
+  background-color: #f6f6f6;
+}
+
+.item {
+  height: 100rpx;
+  line-height: 100rpx;
+  text-align: center;
+}
+
+.active {
+  color: #ff5777;
+  font-weight: 700;
+  background-color: #fff;
+  border-left: 6rpx solid #ff5777;
+}

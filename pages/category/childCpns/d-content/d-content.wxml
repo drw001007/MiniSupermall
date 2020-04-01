@@ -1,0 +1,20 @@
+<!--pages/category/childCpns/d-content/d-content.wxml-->
+<scroll-view class="content" scroll-y>
+  <view class="subcategories">
+    <block wx:for="{{subcategories}}" wx:key="index">
+      <view class="item">
+        <image class="item-image" 
+                src="{{item.image}}" 
+                mode="widthFix">
+        </image>
+        <view class="title">{{item.title}}</view>
+      </view>
+    </block>
+  </view>
+
+  <d-tab-control titles="{{titles}}" bind:itemclick="tabClick"/>
+
+  <view class="detail">
+    <d-goods goodslist="{{categoryDetail}}"/>
+  </view>
+</scroll-view>

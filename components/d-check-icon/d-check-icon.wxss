@@ -1,0 +1,20 @@
+/* components/d-check-icon/d-check-icon.wxss */
+/* .check-icon {
+  border: 2px solid #aaa;
+  border-radius: 20px;
+} */
+
+.content {
+  position: relative;
+}
+
+.border {
+  border: 2px solid #aaa;
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+
+  position: absolute;
+  top: 1px;
+  left: 1px;
+}

@@ -1,0 +1,17 @@
+/* pages/detail/detail.wxss */
+.detail {
+  height: 100vh;
+}
+
+.d-swiper swiper {
+  height: 800rpx;
+}
+
+.buttom-bar {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  background-color: #fff;
+}

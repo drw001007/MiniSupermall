@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "d-menu": "./childCpns/d-menu/d-menu",
+    "d-content": "./childCpns/d-content/d-content"
+  },
+  "navigationBarTitleText": "商品分类"
+}
